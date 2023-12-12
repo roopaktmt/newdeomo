@@ -1,0 +1,10 @@
+pipeline{
+    agent any
+    stages{
+        stage("welcome"){
+            steps{
+        git branch: 'main', credentialsId: 'jenkins-admin', url: 'https://github.com/roopaktmt/azuredemoapp.git/'
+            }
+        }
+    }
+}
