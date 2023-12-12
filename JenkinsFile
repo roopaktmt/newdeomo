@@ -6,5 +6,10 @@ pipeline{
         git branch: 'main', credentialsId: 'jenkins-admin', url: 'https://github.com/roopaktmt/newdeomo.git/'
             }
         }
+stage("mavenbuild"){
+    steps{
+        sh "mvn clean install package"
+        }
+    }
     }
 }
