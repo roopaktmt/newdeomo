@@ -3,7 +3,7 @@ pipeline{
     stages{
         stage("welcome"){
             steps{
-        git branch: 'main', credentialsId: 'jenkins-admin', url: 'https://github.com/roopaktmt/azuredemoapp.git/'
+        git branch: 'main', credentialsId: 'jenkins-admin', url: 'https://github.com/roopaktmt/newdeomo.git/'
             }
         }
     }
