@@ -1,3 +1,4 @@
+currentBuild.displayName="namechanged"
 pipeline{
     agent any
     stages{
